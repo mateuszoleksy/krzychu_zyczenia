@@ -1,0 +1,40 @@
+.container
+{
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: snowfall 5s linear;
+    transform-origin: center;
+    text-align: center;
+}
+
+body
+{
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: url("christmas-black.webp"); /*background by Christmas Dark Pattern
+2017-12-14
+|
+Made by Tomislava Babić*/
+    background-position: center;
+    background-repeat: repeat;
+}
+
+@keyframes snowfall
+{
+    0% { left: -10%;}
+    100% { left: 50%; }
+}
+
+@keyframes bounce
+{
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
